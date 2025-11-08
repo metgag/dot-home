@@ -1,6 +1,6 @@
 ## Overview
 
-This repository contains configuration files for my daily driver setup, focusing on productivity and aesthetics.
+Self configuration files as i occasionally broke my machine.
 
 ## Required Packages
 
