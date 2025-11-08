@@ -1,0 +1,80 @@
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+# It is important that this file is edited as UTF-8.
+# The following line should contain a sharp s:
+# ß
+# If the above line is not correctly displayed, fix your editor first!
+
+general {
+        colors = true
+        interval = 5
+        output_format = "i3bar"
+        colors = true
+        color_good = "#50FA7B"
+        color_degraded = "#F1FA8C"
+        color_bad = "#FF5555"
+}
+
+order += "tztime local"
+order += "volume master"
+order += "battery all"
+order += "memory"
+order += "wireless _first_"
+
+wireless _first_ {
+        format_up = "󰤥 %essid, %bitrate"
+        format_down = "󰤮 Not Connected"
+}
+
+ethernet _first_ {
+        format_up = "E: %ip (%speed)"
+        format_down = "E: down"
+}
+
+battery all {
+        format = "%status %percentage"
+        format_percentage = "%.00f%s"
+        format_down = "󱉞"
+        status_chr = "󰢞"
+        status_bat = "󰂁"
+        status_unk = "󰂑"
+        status_full = "󱟢"
+        status_idle = "󱧥"
+        path = "/sys/class/power_supply/BAT%d/uevent"
+        low_threshold = 30
+        threshold_type = percentage
+
+        # Color when below low_threshold
+        color_bad = "#ff5555"
+        # Color when charging or above
+        color_good = "#50fa7b"
+        # Optional: medium color
+        color_degraded = "#f1fa8c"
+}
+
+disk "/" {
+        format = "%avail"
+}
+
+load {
+        format = "%5min"
+}
+
+memory {
+        format = "󰍛 %used/%total"
+        threshold_degraded = "10%"
+        format_degraded = "󰍛 %free"
+}
+
+tztime local {
+        format = "󰃰 %Y-%m-%d, %a %I.%M%P"
+}
+
+volume master {
+        format = "󰕾 %volume"
+        format_muted = "󰖁 %volume"
+        device = "default"
+        mixer = "Master"
+        mixer_idx = 0
+}

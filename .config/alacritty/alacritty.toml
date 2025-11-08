@@ -1,0 +1,15 @@
+general.import = ["~/.config/alacritty/themes/dracula.toml"]
+
+[font]
+size = 8
+normal = { family = "MonacoB Nerd Font Mono", style = "Regular" }
+# normal = { family = "MesloLGS Nerd Font", style = "Regular" }
+# normal = { family = "DejavuSansM Nerd Font", style = "Regular" }
+# bold = History{ family = "<string>", style = "Bold" }
+# italic = { family = "<string>", style = "Italic" }
+# italic = { family = "<string>", style = "Bold Italic" }
+
+[keyboard]
+bindings = [
+   { key = "Return", mods = "Control|Shift", action = "SpawnNewInstance" }
+]
