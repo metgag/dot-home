@@ -27,7 +27,7 @@ cd dotfiles
 ### Install required packages
 
 ```bash
-sudo pacman -S alacritty vim rofi i3 dunst flameshot zsh picom polybar yazi
+sudo pacman -S alacritty vim rofi i3 dunst flameshot zsh zsh-autosuggestions zsh-completions zsh-syntax-highlighting picom polybar yazi
 ```
 
 ## Post-Installation
