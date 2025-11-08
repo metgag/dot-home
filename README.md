@@ -40,3 +40,17 @@ sudo pacman -S alacritty vim rofi i3 dunst flameshot zsh zsh-autosuggestions zsh
 2. Log out and log back in to apply i3 window manager
 
 3. Press `Mod + Shift + R` to reload i3 configuration
+
+### Touchpad Configuration
+
+The touchpad settings in `etc/X11/xorg.conf.d/30-touchpad.conf` include:
+```
+Section "InputClass"
+    Identifier "touchpad"
+    Driver "libinput"
+    MatchIsTouchpad "on"
+    Option "Tapping" "on"
+    Option "TappingButtonMap" "lmr"
+    Option "AccelSpeed" "0.54"
+EndSection
+```
