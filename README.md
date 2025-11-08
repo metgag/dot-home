@@ -1,7 +1,3 @@
-# Dotfiles
-
-My personal configuration files for a minimal and efficient Linux desktop environment.
-
 ## Overview
 
 This repository contains configuration files for my daily driver setup, focusing on productivity and aesthetics.
