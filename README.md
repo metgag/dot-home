@@ -23,7 +23,8 @@ Self configuration files as i occasionally broke my machine.
 sudo pacman -S alacritty vim rofi i3 dunst flameshot zsh zsh-autosuggestions zsh-completions zsh-syntax-highlighting picom polybar yazi
 ```
 
-- [Paru](https://github.com/Morganamilo/paru)
+- [paru](https://github.com/Morganamilo/paru)
+- [yazi](https://yazi-rs.github.io/docs/installation/#arch)
 
 ## Post-Installation
 
