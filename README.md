@@ -47,3 +47,5 @@ Section "InputClass"
     Option "AccelSpeed" "0.54"
 EndSection
 ```
+make sure `xorg-xinput` is installed
+```
