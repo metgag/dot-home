@@ -48,4 +48,3 @@ Section "InputClass"
 EndSection
 ```
 make sure `xorg-xinput` is installed
-```
